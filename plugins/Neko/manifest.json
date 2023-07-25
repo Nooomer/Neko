@@ -1,0 +1,14 @@
+{
+    "name": "Neko Plugin",
+    "description": "A plugin for send a neko pics.",
+    "authors": [
+      {
+        "name": "Nooomer",
+        "id": "441166966250536962"
+      }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "ic_badge_staff"
+    }
+}
