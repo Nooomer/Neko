@@ -3,9 +3,9 @@ import { logger } from "@vendetta";
 import { findByProps } from "@vendetta/metro"
 import { storage } from '@vendetta/plugin';
 
-let commands = []
 
 export default {
+    let commands = []
     onLoad: () => {
        commands.push(registerCommand({ 
             name: "neko",
