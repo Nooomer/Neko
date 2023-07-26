@@ -3,9 +3,11 @@ import { logger } from "@vendetta";
 import { findByProps } from "@vendetta/metro"
 import { storage } from '@vendetta/plugin';
 
+let commands = []
+
 export default {
     onLoad: () => {
-       const commands = registerCommand({ 
+       commands.push(registerCommand({ 
             name: "neko",
             displayName: "Neko",
             displayDescription: "Get a neko pics",
@@ -27,10 +29,10 @@ export default {
             applicationId: "-1",
             inputType: 1,
             type: 1,
-        });
+        }));
     },
     onUnload: () => {
-       commands.unregisterCommands();
+       for (const unregisterCommands of commands) unregisterCommands()
     },
 }
 
