@@ -30,7 +30,7 @@ export default {
         });
     },
     onUnload: () => {
-        command();
+        unregisterCommands();
     },
 }
 
