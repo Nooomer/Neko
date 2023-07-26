@@ -3,11 +3,9 @@ import { logger } from "@vendetta";
 import { findByProps } from "@vendetta/metro"
 import { storage } from '@vendetta/plugin';
 
+let commands = []
 
-export default {
-    let commands = []
-    onLoad: () => {
-       commands.push(registerCommand({ 
+commands.push(registerCommand({ 
             name: "neko",
             displayName: "Neko",
             displayDescription: "Get a neko pics",
@@ -29,12 +27,14 @@ export default {
             applicationId: "-1",
             inputType: 1,
             type: 1,
-        }));
+        }))
+
+export const onLoad = () => {
+       console.log("Load")
     },
-    onUnload: () => {
+export const onUnload = () =>  {
        for (const unregisterCommands of commands) unregisterCommands()
-    },
-}
+    }
 
 async function gifCommand(args, ctx) {
     const emotion = args[0].value;
