@@ -38,8 +38,8 @@ async function gifCommand(args, ctx) {
     const emotion = args[0].value;
 
     const gifurl = await getGif(emotion);
-
-    sendMessage(ctx.channel.id, gifUrl)
+    console.log(gifurl)
+    sendMessage(ctx.channel.id, gifurl)
 }
 
 function sendMessage(channelID, content) {
