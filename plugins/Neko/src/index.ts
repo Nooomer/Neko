@@ -31,7 +31,7 @@ commands.push(registerCommand({
 
 export const onLoad = () => {
        console.log("Load")
-    },
+    }
 export const onUnload = () =>  {
        for (const unregisterCommands of commands) unregisterCommands()
     }
