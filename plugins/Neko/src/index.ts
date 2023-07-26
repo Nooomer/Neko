@@ -50,7 +50,7 @@ function sendMessage(channelID, content) {
     const message = MessageActions.sendMessage(channel, content)
 }
 
-async getGif(emotion) {
+async function getGif(emotion) {
           console.log(emotion)
           let response;
           if(emotion == undefined){
