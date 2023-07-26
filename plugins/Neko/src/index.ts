@@ -46,6 +46,8 @@ async function gifCommand(args, ctx) {
 
 function sendMessage(channelID, content) {
     const channel = channelID ?? Channels?.getChannelId?.();
+    console.log(channel)
+    console.log(content)
     const message = MessageActions.sendMessage(channel, content)
 }
 
@@ -67,6 +69,7 @@ async function getGif(emotion) {
             return};
           const data = await response.json();
           const GIF = Object.values(data.results)[LibraryUtils.randomNo(0, 10)];
+          console.log(GIF)
           return GIF.media[0].gif.url
            
         }
