@@ -32,8 +32,6 @@ export default {
     onUnload: () => {
         command();
     },
-
-    settings: Settings,
 }
 
 async function gifCommand(args, ctx) {
