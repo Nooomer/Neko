@@ -40,9 +40,9 @@ export default {
 async function gifCommand(args, ctx) {
     const emotion = args[0].value;
 
-    const gif = await getGif(emotion);
+    const gifurl = await getGif(emotion);
 
-    sendMessage(ctx.channel.id, gif)
+    sendMessage(ctx.channel.id, gifUrl)
 }
 
 function sendMessage(channelID, content) {
@@ -68,13 +68,6 @@ async function getGif(emotion) {
             return};
           const data = await response.json();
           const GIF = Object.values(data.results)[LibraryUtils.randomNo(0, 10)];
-          return GIF.itemurl
-            : {
-              image: {
-                url: GIF.media[0].gif.url,
-                proxyURL: GIF.media[0].gif.url,
-                width: GIF.media[0].gif.dims[0],
-                height: GIF.media[0].gif.dims[1],
-              },
-            };
+          return GIF.media[0].gif.url
+           
         }
