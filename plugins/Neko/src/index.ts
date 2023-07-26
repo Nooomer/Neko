@@ -5,7 +5,7 @@ import { storage } from '@vendetta/plugin';
 
 export default {
     onLoad: () => {
-        command = registerCommand({ 
+        registerCommand({ 
             name: "neko",
             displayName: "Neko",
             displayDescription: "Get a neko pics",
