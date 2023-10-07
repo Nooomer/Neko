@@ -1,0 +1,13 @@
+{
+  "name": "NoIdle",
+  "description": "Prevent status from idling when Discord is in the background.",
+  "authors": [
+    {
+      "name": "Nooomer",
+      "id": "441166966250536962"
+    }
+  ],
+  "vendetta": {
+    "icon": "StatusIdle"
+  }
+}
