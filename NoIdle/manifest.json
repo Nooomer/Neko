@@ -1,1 +1,1 @@
-{"name":"NoIdle","description":"Prevent status from idling when Discord is in the background.","authors":[{"name":"Nooomer","id":"441166966250536962"}],"main":"index.js","vendetta":{"icon":"StatusIdle"},"hash":"7f6d85942fa8304d18ce9632bce3d5a496c7e456302ea72cd777be9835acef20"}
+{"name":"NoIdle","description":"Prevent status from idling when Discord is in the background.","authors":[{"name":"Nooomer","id":"441166966250536962"}],"main":"index.js","vendetta":{"icon":"StatusIdle"},"hash":"43fb8c31480fbf1c36da3c867b773c511f47abcb79a2025f1cdbd1f91d59e2ca"}
